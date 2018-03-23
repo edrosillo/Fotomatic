@@ -116,18 +116,15 @@ header .mobile {
 
 /* Sign Up Section */
 
-.banner {
+#sign-up-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-image: url(../images/banner-landingpage.jpg);
   height: 43.5rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#sign-up-section {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 #sign-up-cta {
@@ -179,6 +176,7 @@ header .mobile {
     align-items: center;
     justify-content: center;
     height: 28rem;
+    max-width: 100%;
   }
 
   #sign-up-cta {
@@ -209,14 +207,21 @@ header .mobile {
 @media only screen and (max-width: 450px) {
   #sign-up-section {
     height: 20rem;
+    max-width: 100%;
+    background-position: right;
+  }
+
+  #sign-up-cta {
+    margin-left: 0;
+    padding: 0;
   }
 
   #sign-up-cta h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   #sign-up-cta h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -282,6 +287,10 @@ header .mobile {
   .feature {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
+  }
+
+  #features-section .top {
+    background-color: #d4d5d6;
   }
 }
 
@@ -397,7 +406,7 @@ footer {
 footer .content {
   color: white;
   display: flex;
-  font-size: 0.75rem;
+  font-size: 0.625rem;
 }
 
 footer .copyright {
